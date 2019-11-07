@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: black;}
+p    {color: black;}
+</style>
+</head>
+<body>
+
+<h1>You only live once</h1>
+<h2>But if you do it right, once is enough.</p>
+<h3>Just remember to make the most out of life every day.</p>
+
+</body>
+</html>
