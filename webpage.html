@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1200px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 1200px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Seattle Central College Students</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li>Alessandra Lima</li>
+      <li>Linda Danh</li>
+      <li>Moses Gessese</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Alessandra Lima</h1>
+    <p>Alessandra Lima is originally from Brazil. She looks forward to learning Computer Science and growing in this field.</p>
+    <p>She plans on studying at Seattle Central College for two years and then transfer to an university in the Seattle area.</p><img src="https://cdn.pixabay.com/photo/2017/12/06/11/03/brazil-3001462_960_720.png" style="width: 250px;height: 200px">
+    
+<h1>Linda Danh</h1>
+    <p>Linda Danh is originally from Vietnam. She looks forward to learning Computer Science and growing in this field.</p>
+    <p>She plans on studying at Seattle Central College for two years and then transfer to Seattle North College.</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1280px-Flag_of_Vietnam.svg.png" style="width: 250px;height: 200px">    
+
+    <h1>Moses Gessese</h1>
+    <p>Moses Gessese is from Etiophia. He looks forward to learning Computer Science and growing in this field.</p>
+    <p>He plans on studying at Seattle Central College for two years and then transfer to Seattle North College.</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/800px-Flag_of_Ethiopia.svg.png" style="width: 250px;height: 200px">
+
+</section>
+
+
+
+
+
+</body>
+</html>
+
