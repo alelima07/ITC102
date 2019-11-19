@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <title>CSS Template</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* Style the header */
+ header {
+   background-color: #97111B;
+   padding: 30px;
+   text-align: center;
+   font-size: 35px;
+   color: white;
+ }
+
+ /* Create two columns/boxes that floats next to each other */
+ nav {
+   float: left;
+   width: 30%;
+   height: 1600px; /* only for demonstration, should be removed */
+   background: #FFE6E7;
+   padding: 20px;
+ }
+
+ /* Style the list inside the menu */
+ nav ul {
+   list-style-type: none;
+   padding: 0;
+ }
+
+ article {
+   float: left;
+   padding: 20px;
+   width: 70%;
+   background-color: #FFFFFF;
+   height: 1600px; /* only for demonstration, should be removed */
+ }
+
+ /* Clear floats after the columns */
+ section:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /* Style the footer */
+ footer {
+   background-color: #97111B;
+   padding: 10px;
+   text-align: center;
+   color: white;
+ }
+
+ /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+ @media (max-width: 600px) {
+   nav, article {
+     width: 100%;
+     height: auto;
+   }
+ }
+ </style>
+ </head>
+ <body>
+
+
+ <header>
+   <h2>HTML, CSS, JavaScript</h2>
+   <h2>Students Insights<h2>
+ </header>
+
+ <section>
+   <nav>
+     <ul>
+       <li><b>Alessandra Lima</li></b>
+       <li><b>Linda Danh</li></b>
+       <li><b>Moses Gessese</li></b>
+     </ul>
+   </nav>
+
+   <article>
+     <h1>Alessandra Lima</h1>
+     <p>In this website, I was in charge of HTML. Firstly, HTML is short for "HyperText Markup Language". That may sound scary, but it simply means it is a language for describing web-pages using ordinary text. HTML is not a complex programming language.</p>
+     <p>During this class, I learned that every web page is actually an HTML file. Each HTML file is just a plain-text file, but with a .html file extension instead of .txt, and is made up of many HTML tags as well as the content for a web page. A web site will often contain many html files that link to each other.</p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" style="width: 250px;height: 200px">
+
+ <h1>Linda Danh</h1>
+ 	<p>Hello all, my name is Linda Danh and I am a 28 year old female that attends Seattle Central Community College. I'm here to acquire my AA transfer degree in programming and hopefully be getting my bachelors degree at UW Bothell for Computer Science & Software Engineering.<p>
+     <p>My parents immigrated here in 1985 from Vietnam to achieve a better life for my siblings and me. I am the youngest of three. My current occupation is an international banking specialist at U.S. Bank in downtown Seattle. I've been working for the banking industry for 8 years and decided to have a career change into programming.</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png" style="width: 250px;height: 200px">    
+
+     <h1>Moses Gessese</h1>
+     <p>My name is Moses, I am from Ethiopian and I speak 3 languages fluently. I was born and raised in Seattle and I like the city. I have been here all of my life. I’m 22 years old and my birthday is in July. I’m currently attending Seattle central college intending on becoming a software engineer.</p>
+     <p>My favorite ice cream flavor is vanilla. On my free time I like to hoop, watch movies, hang out, and draw. My favorite teams are the Seattle Seahawks and the Los Angeles Lakers.</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbEFtOem1Pk3Vu6wN-X-TOKF1PIINI9wZXD2jw28eQ0Fy5BKoI&s" style="width: 250px;height: 200px">
+
+ </section>
+
+ <footer>
+   <p>Seattle Central College - Fall 2019</p>
+ </footer>
+
+
+
+
+
+ </body>
+ </html>
+
