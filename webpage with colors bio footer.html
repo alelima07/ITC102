@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #97111B;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1600px; /* only for demonstration, should be removed */
+  background: #FFE6E7;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFF;
+  height: 1600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #97111B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Seattle Central College Students</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><b>Alessandra Lima</li></b>
+      <li><b>Linda Danh</li></b>
+      <li><b>Moses Gessese</li></b>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Alessandra Lima</h1>
+    <p>Hello everyone, I am Alessandra Lima, 27 years old, originally from Brazil. I look forward to learning Computer Science and growing in this field. My big goal is to study at Seattle Central College for two years and then transfer to an university in the Seattle area.</p>
+    <p>I moved to the USA in 2017, fell in love with the country and decided to get a degree. So far, it's been a great learning experience.</p><img src="https://cdn.pixabay.com/photo/2017/12/06/11/03/brazil-3001462_960_720.png" style="width: 250px;height: 200px">
+    
+<h1>Linda Danh</h1>
+	<p>Hello all, my name is Linda Danh and I am a 28 year old female that attends Seattle Central Community College. I'm here to acquire my AA transfer degree in programming and hopefully be getting my bachelors degree at UW Bothell for Computer Science & Software Engineering.<p>
+    <p>My parents immigrated here in 1985 from Vietnam to achieve a better life for my siblings and me. I am the youngest of three. My current occupation is an international banking specialist at U.S. Bank in downtown Seattle. I've been working for the banking industry for 8 years and decided to have a career change into programming.</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1280px-Flag_of_Vietnam.svg.png" style="width: 250px;height: 200px">    
+
+    <h1>Moses Gessese</h1>
+    <p>My name is Moses, I am from Ethiopian and I speak 3 languages fluently. I was born and raised in Seattle and I like the city. I have been here all of my life. I’m 22 years old and my birthday is in July. I’m currently attending Seattle central college intending on becoming a software engineer.</p>
+    <p>My favorite ice cream flavor is vanilla. On my free time I like to hoop, watch movies, hang out, and draw. My favorite teams are the Seattle Seahawks and the Los Angeles Lakers.</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/800px-Flag_of_Ethiopia.svg.png" style="width: 250px;height: 200px">
+
+</section>
+
+<footer>
+  <p>Seattle Central College - Fall 2019</p>
+</footer>
+
+
+
+
+
+</body>
+</html>
